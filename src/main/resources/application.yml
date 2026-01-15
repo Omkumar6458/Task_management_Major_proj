@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: task-management-system
+
+  profiles:
+    active: prod   # 👈 change to prod when needed
+
+server:
+  port: 8080
+
+jwt:
+  secret: ThisIsAVerySecureSecretKeyForJWTTokenGenerationPleaseChangeInProduction
+  expiration: 86400000
+  refresh-expiration: 604800000
